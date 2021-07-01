@@ -1,0 +1,66 @@
+.page{
+  max-width: 47rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline{
+  border-left: 3px solid var(--primary-color);
+}
+
+.time{
+  padding: 0.25rem 1.25rem 0.25rem;
+  background-color: #f0f0f0;
+  font-weight: 700;
+  display: inline-flex;
+}
+
+.timeline-year{
+  margin: 2.5rem 0 var(--rem-space) 0;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.timeline-cards{
+  overflow: hidden;
+  display: grid;
+  grid-row-gap: 1.5rem;
+}
+
+.timeline-card{
+  position: relative;
+}
+
+.timeline-card::before{
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: var(--rem-space);
+  left: -50%;
+}
+
+.card{
+  border-radius: 2px;
+  margin: var(--rem-space);
+  margin-right: 0.25rem;
+  border-left: 3px solid var(--primary-color);
+  box-shadow: rgba(14, 38, 37, 0.12) 0px 1px 2px 0px,
+              rgba(14, 38, 37, 0.32) 0px 2px 4px 1px;
+  background-color: white;
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.card-title{
+  margin-top: var(--rem-space);
+  margin-bottom: 0;
+  font-size: var(--rem-space);
+}
+
+@media(min-width: 768px){
+  .card-title{
+    font-size: 1.25rem
+  }
+}

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="/styles.css" rel="stylesheet">
+  <link href="/timeline.css" rel="stylesheet">
   <title>Shraddha | Portfolio</title>
 </head>
 
@@ -20,8 +21,8 @@
         <li><a href="/projects.html">projects</a></li>
         <li><a href="/blogs.html">blogs</a></li>
       </ul>
-      <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
-        <span class="fa fa-close" aria-hidden="true"></span>
+      <a href="#" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+        <span class="span-icons fa fa-close" aria-hidden="true"></span>
       </a>
     </div>
     <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
@@ -33,7 +34,8 @@
     <img src="/me.jpeg" alt="shraddha-gupta-image" class="hero-image">
     <div class="container container-flex-column">
       <h1 class="hero-heading"> Hi there &#128075;, I'm a <span class="hero-heading-highlight">Web Developer</span></h1>
-      <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio atque provident non,
+      <p class="hero-text paragraph-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio atque
+        provident non,
         deleniti animi dolorem
         aut tempore eum, debitis unde quae iusto?</p>
     </div>
@@ -68,15 +70,99 @@
           Source</button>
       </div>
     </div>
-    <button class="button button-cta">View More Projects</button>
+    <div class="div-content-center"><button class="button button-cta">View All Projects</button></div>
   </section>
   <section class="section section-offwhite">
     <h2>Blogs I've Written</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quia illo eveniet ipsum sunt, aspernatur,
+    <p class="paragraph-text blog-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quia illo
+      eveniet ipsum sunt, aspernatur,
       mollitia accusantium blanditiis porro facilis, in amet! Ratione mollitia nostrum illo nisi? Facilis, voluptates
       quam.</p>
+    <div class="div-content-center"><button class="button button-blog">Read Blogs</button></div>
   </section>
-  <footer class="footer"></footer>
+  <section class="section">
+    <h2>My Education Journey So Far</h2>
+    <div class="page">
+      <div class="timeline">
+        <div class="timeline-group">
+          <span class="time timeline-year" aria-hidden="true">2008</span>
+          <div class="timeline-cards">
+            <div class="timeline-card card">
+              <header class="card-header">
+                <time class="time" datetime="2008-02-02">
+                  <span>02 Feb</span>
+                </time>
+                <h3 class="card-title">The part of my life in University of Pennsylvania</h3>
+              </header>
+              <p class="paragraph-text">Attends the Philadelphia Museum School of Industrial Art. Studies design with
+                Alexey Brodovitch, art
+                director at Harper's Bazaar, and works as his assistant.</p>
+            </div>
+            <div class="timeline-card card">
+              <header class="card-header">
+                <time class="time" datetime="2008-09-01">
+                  <span>01 Sept</span>
+                </time>
+                <h3 class="card-title">The part of my life in University of Pennsylvania</h3>
+              </header>
+              <p class="paragraph-text">Started from University of Pennsylvania. This is an important stage of my
+                career. Here I worked in the
+                local magazine. The experience greatly affected me</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-group">
+          <span class="time timeline-year" aria-hidden="true">2014</span>
+          <div class="timeline-cards">
+            <div class="timeline-card card">
+              <header class="card-header">
+                <time class="time" datetime="2008-07-14">
+                  <span>14 Jul</span>
+                </time>
+              </header>
+              <p class="paragraph-text">Travels to France, Italy, Spain, and Peru. After completing fashion editorial in
+                Lima, prolongs stay to
+                make portraits of local people in a daylight studio</p>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-group">
+          <span class="timeline-year time" aria-hidden="true">2016</span>
+          <div class="timeline-cards">
+            <div class="timeline-card card">
+              <header class="card-header">
+                <time class="time" datetime="2008-08-18">
+                  <span>18 Aug</span>
+                </time>
+              </header>
+              <p class="paragraph-text">Upon moving to Brooklyn that summer, I began photographing weddings in Chicago
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <h2>Let's Connect</h2>
+    <div class="div-content-center">
+      <a href="#" class="link">
+        <span class="span-icons fa fa-github" aria-hidden="true"></span>
+      </a>
+      <a href="#" class="link">
+        <span class="span-icons fa fa-instagram" aria-hidden="true"></span>
+      </a>
+      <a href="#" class="link">
+        <span class="span-icons fa fa-linkedin" aria-hidden="true"></span>
+      </a>
+    </div>
+    <h5>Useful Links</h5>
+    <div class="div-content-center div-link-content">
+      <a href="#" class="link">home</a>
+      <a href="./projects.html" class="link">projects</a>
+      <a href="./blogs.html" class="link">blogs</a>
+    </div>
+  </footer>
 
 </body>
 
