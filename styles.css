@@ -163,34 +163,23 @@ h2{
   color: var(--primary-color);
 }
 
-.section-project{
-  max-width: 47rem;
-  margin: 0 auto;
-  padding: var(--rem-space);
-  padding-bottom: calc(var(--rem-space)*0.8);
-  border: 1px solid var(--primary-color);
-  border-radius: var(--rem-space);
+.container-cards-width{
+  --card-width : 47rem;
 }
 
-.section-project>div{
+.container-cards-width>div{
   margin-bottom: var(--rem-space);
 }
 
-.section-project>div>h3{
+.container-cards-width>div>h3{
   margin: 0;
 }
 
-/* .section-project>small{ */
-  /* background-color: #7c3ead; */
-  /* padding: 1rem; */
-  /* margin: 1rem; */
-/* } */
-
-.section-project>p{
+.container-cards-width>p{
   margin: 0.2rem 0;
 }
 
-.section-project>button{
+.container-cards-width>button{
   margin-top: var(--rem-space);
 }
 
@@ -201,7 +190,7 @@ h2{
 }
 
 .container-cards{
-  width: 240px;
+  width: var(--card-width, 240px);
   padding: var(--rem-space);
   margin: var(--rem-space) 0;
   border: 1px solid var(--primary-color);
