@@ -36,7 +36,7 @@ body{
 
 .link{
   text-decoration: none;
-  color: white;
+  color: var(--button-color, white);
 }
 
 .link-active{
@@ -80,14 +80,6 @@ body{
   color: var(--primary-color);
   text-decoration: none;
 }
-/* 
-.main-menu li>a{
-  border-bottom: 1px solid #bbbbbb;
-}
-
-.main-menu li:first-child a {
-  border-top: 1px solid #bbbbbb;
-} */
 
 .main-menu:target{
   scroll-margin-top: var(--rem-space);
@@ -146,10 +138,6 @@ h2{
   text-decoration: underline;
   font-size: large;
 }
-
-/* .section>h3{
-  margin: 0;
-} */
 
 .section-offwhite{
   background-color: var(--offwhite);
@@ -233,14 +221,14 @@ h2{
 
 .button-primary, .button-cta{
   background: var(--primary-color);
-  color: white;
+  --button-color: white;
   box-shadow: rgba(14, 38, 37, 0.12) 0px 1px 2px 0px,
               rgba(14, 38, 37, 0.32) 0px 2px 4px 1px;
 }
 
 .button-secondary, .button-cta:hover, .button-blog{
   background: white;
-  color: var(--primary-color);
+  --button-color: var(--primary-color);
   box-shadow: rgba(170, 170, 170, 0.12) 0px 1px 2px 0px,
                 rgba(95, 95, 95, 0.32) 0px 2px 4px 1px;
 }
