@@ -36,7 +36,7 @@ body{
 
 .link{
   text-decoration: none;
-  color: var(--button-color, white);
+  color: white;
 }
 
 .link-active{
@@ -197,16 +197,16 @@ h2{
   font-size: calc(var(--rem-space)*0.8);
 }
 
+.div-content-center{
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   border: 0;
   font-weight: bold;
   border-radius: calc(var(--rem-space)*0.5);
   cursor: pointer;
-}
-
-.div-content-center{
-  display: flex;
-  justify-content: center;
 }
 
 .button-primary, .button-secondary{
@@ -222,14 +222,14 @@ h2{
 
 .button-primary, .button-cta{
   background: var(--primary-color);
-  --button-color: white;
+  color: white;
   box-shadow: rgba(14, 38, 37, 0.12) 0px 1px 2px 0px,
               rgba(14, 38, 37, 0.32) 0px 2px 4px 1px;
 }
 
 .button-secondary, .button-cta:hover, .button-blog{
   background: white;
-  --button-color: var(--primary-color);
+  color: var(--primary-color);
   box-shadow: rgba(170, 170, 170, 0.12) 0px 1px 2px 0px,
                 rgba(95, 95, 95, 0.32) 0px 2px 4px 1px;
 }
@@ -237,8 +237,6 @@ h2{
 .button-cta, .button-blog{
   font-size: var(--rem-space);
   padding: calc(var(--rem-space)*0.75);
-  margin: var(--rem-space);
-  margin-top: calc(var(--rem-space)*0.5);
 }
 
 .blog-text{
